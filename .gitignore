@@ -1,0 +1,32 @@
+# Data & model weights — huge, and not something git should track
+Results/
+results.zip
+Raw dataset/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+
+# Node / frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# Env files
+.env
+backend/.env
+
+# Editor/OS
+.DS_Store
+*.log
+
+# Excluded from public repo — scratch, academic, and personal files
+reference/
+Project Synopsis/
+report template.pdf
+499a-both-frameworks.ipynb
+NEW_LAPTOP_SETUP.txt
+PORTING_GUIDE.txt

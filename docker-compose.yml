@@ -1,0 +1,17 @@
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./Results:/data/Results:ro
+    environment:
+      ECG_RESULTS_DIR: /data/Results
+      ECG_CORS_ORIGINS: '["http://localhost:5173"]'
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "5173:80"
+    depends_on:
+      - backend
